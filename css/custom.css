@@ -1,0 +1,57 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+h1,h2,h3,h4,h5,h6,p,strong,em,span {word-break:keep-all}
+.content-left-wrapper h2 {font-weight:100;font-size:3rem;color:#29FE14;letter-spacing:-2px}
+.content-left-wrapper h2 strong {font-weight:100;color:#fff}
+.content-left-wrapper p strong {display:block;padding:20px 0;font-weight:500}
+.content-left-wrapper p span {color:#999}
+#wizard_container {padding-top:60px}
+
+#progressbar {background:none}
+#progressbar .ui-widget-header {background:#2f2f2f}
+.step .wrap_step01 {margin-bottom:42px}
+.step .txt_desc {color:#999}
+.step textarea {width:100%;height:100px}
+.step #projectTypeEtc {margin-top:4px}
+.step #projectTypeEtc[disabled] {display:none;border:1px solid #eee;background-color:#f9f9f9} 
+.step #projectTypeEtc:focus {border-color: #2f2f2f} 
+
+.main_question .tit_sub {display:block;margin-top:8px;font-size:14px;color:#999}
+
+.modal .modal-title span {display:block;font-size:12px;line-height:18px;color:#999}
+.modal .modal-body {overflow-x:hidden;overflow-y:auto;height:60vh;max-height:600px}
+.container_check.version_2 {display:inline-block;margin-bottom:0}
+.form-group.terms {padding-right:80px}
+.form-group.terms .link_terms {display:block;position:absolute;top:11px;right:0;font-size:11px;line-height:18px;text-decoration:underline}
+.form-field.inp_txt {margin-top:10px}
+
+.form-group {margin-bottom:.5rem}
+.form-group .material-icons {display:inline-block;position:static;margin:3px 0 0 8px;font-size:25px;vertical-align:top}
+.form-group .tit_sub {margin-top:30px;font-size:1rem}
+.form-group .styled-select {margin-left:15px}
+.form-group .custom-radio {display:inline-block;margin-top:2px;padding-right:20px}
+.form-group .custom-radio:last-of-type {display:block} 
+.form-group .custom-radio .custom-control-input:checked~.custom-control-label::before {background-color:#2f2f2f}
+.form-group .custom-control-label {line-height:24px;cursor:pointer}
+.form-group #questionInputText {display:none;margin-top:4px}
+
+.step2 .tooltip_info {font-size:22px;vertical-align:top;color:#999}
+.step2 .tooltip_info:hover {color:#2f2f2f}
+.step2 .form-group {display:inline-block}
+.step2 .form-group:last-of-type {display:block} 
+.step2 .form-group .container_check.version_2 {margin-right:20px;padding:3px 0 0 32px}
+.step2 .form-group .checkmark {width:24px;height:24px}
+.step2 .form-group .checkmark.checkmark:after {top:5px;left:9px}
+#slider12c .slider-selection {background:#29FE14}
+
+
+.tooltip,
+.tooltip .tooltip-inner {width:320px !important;max-width:320px !important;text-align:left}
+.tooltip h5 {font-size:16px;line-height:24px;color:#fff}
+.tooltip p {padding-top:10px;font-size:14px;line-height:20px;color:#aaa}
+.tooltip strong {display:block;font-weight:bold;color:#ddd}
+
+@media (max-width: 767px) {
+  .content-left-wrapper h2 {font-size:2rem}
+}
