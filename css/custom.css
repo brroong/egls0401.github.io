@@ -55,3 +55,8 @@ h1,h2,h3,h4,h5,h6,p,strong,em,span {word-break:keep-all}
 @media (max-width: 767px) {
   .content-left-wrapper h2 {font-size:2rem}
 }
+
+.copy p {display: inline-block; margin: 0 auto; padding: 1px auto}
+.copy p a {color: #999}
+.copy p a:hover {color: rgb(41, 254, 20)}
+.copy p:first-child::after {content: " | "}
