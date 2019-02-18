@@ -2,6 +2,7 @@
 /* Your custom styles below */
 /*============================================================================================*/
 h1,h2,h3,h4,h5,h6,p,strong,em,span {word-break:keep-all}
+.content-left-wrapper {height:100%;height:100vh}
 .content-left-wrapper h2 {font-weight:100;font-size:3rem;color:#29FE14;letter-spacing:-2px}
 .content-left-wrapper h2 strong {font-weight:100;color:#fff}
 .content-left-wrapper p strong {display:block;padding:20px 0;font-weight:500}
@@ -45,18 +46,27 @@ h1,h2,h3,h4,h5,h6,p,strong,em,span {word-break:keep-all}
 .step2 .form-group .checkmark.checkmark:after {top:5px;left:9px}
 #slider12c .slider-selection {background:#29FE14}
 
-
 .tooltip,
 .tooltip .tooltip-inner {width:320px !important;max-width:320px !important;text-align:left}
 .tooltip h5 {font-size:16px;line-height:24px;color:#fff}
 .tooltip p {padding-top:10px;font-size:14px;line-height:20px;color:#aaa}
 .tooltip strong {display:block;font-weight:bold;color:#ddd}
 
-@media (max-width: 767px) {
-  .content-left-wrapper h2 {font-size:2rem}
-}
-
-.copy p {display: inline-block; margin: 0 auto; padding: 1px auto}
+.copy p span {display:inline-block}
 .copy p a {color: #999}
 .copy p a:hover {color: rgb(41, 254, 20)}
-.copy p:first-child::after {content: " | "}
+.copy .copyright:after {content:"|";display:inline-block;padding:0 4px 0 8px;color:#555}
+
+
+@media (max-width: 991px){
+  .copy {display:block;padding:0 30px}
+  .copy p {display:inline-block;margin:0;padding:0}
+  .copy p a {color: rgb(41, 254, 20)}
+}
+
+@media (max-width: 767px){
+  .content-left-wrapper h2 {font-size:2rem}
+}
+@media (max-width: 515px){
+  .copy .copyright:after {content: ""}
+}
