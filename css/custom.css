@@ -52,6 +52,7 @@ h1,h2,h3,h4,h5,h6,p,strong,em,span {word-break:keep-all}
 .tooltip p {padding-top:10px;font-size:14px;line-height:20px;color:#aaa}
 .tooltip strong {display:block;font-weight:bold;color:#ddd}
 
+.copy p {margin:0}
 .copy p span {display:inline-block}
 .copy p a {color: #999}
 .copy p a:hover {color: rgb(41, 254, 20)}
