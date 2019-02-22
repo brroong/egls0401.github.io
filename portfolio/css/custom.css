@@ -1,0 +1,40 @@
+/* COMMON */
+.tit_marker {font-family:'Permanent Marker', cursive}
+
+/* HEADER */
+#header {background:#000}
+#main-nav a {color:#666}
+#main-nav > ul .active > a,
+#main-nav > ul a.active,
+#main-nav li a:hover,
+#options li a.current,
+#options li a.selected {color:#fff}
+h1#logo a {background:none;font-size:40px;line-height:40px;text-indent:0;color:#fff}
+
+
+/* social logo */
+.social-list .link_wb {display:block;width:35px;height:18px;background:url(/portfolio/images/logo_wb_wh.png) 0 0 no-repeat;background-size:35px auto;text-indent:-9999px}
+
+
+
+/* CONTENT */
+/* img */
+
+.background-image15,
+.background-image16 {display:block;width:100%;height:100%;-webkit-background-size:100% auto;background-size:100% auto;background-repeat:cover}
+
+.background-image1 {background-image:url(/portfolio/images/img_web_01.png);background-position-x:0}
+.background-image2 {background-image:url(/portfolio/images/img_web_02.png);background-position-x:10%}
+.background-image3 {background-image:url(/portfolio/images/img_web_03.png);background-position-x:10%}
+.background-image4 {background-image:url(/portfolio/images/img_web_04.png);background-position-x:10%}
+.background-image5 {background-image:url(/portfolio/images/img_web_05_1.png);background-position-x:0}
+.background-image11 {background-image:url(/portfolio/images/img_m_01.png);background-position-y:0}
+.background-image12 {background-image:url(/portfolio/images/img_m_02.png);background-position-y:0}
+.background-image13 {background-image:url(/portfolio/images/img_m_03.png);background-position-y:0}
+.background-image14 {background-image:url(/portfolio/images/img_m_04.png);background-position-y:0}
+.background-image15 {background-image:url(/portfolio/images/img_m_05.png);background-position-y:0}
+.background-image16 {background-image:url(/portfolio/images/img_m_06.png);background-position-y:0}
+
+a:hover .images {opacity:.3}
+.images:after {content:'';position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:100}
+/* .web .images:after {background:rgba(255, 38, 0, 0.7)} */
