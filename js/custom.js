@@ -37,6 +37,8 @@ $(document).ready(function() {
   // var sliderC = new Slider("#budgetRange", { id: "sliderRange", min: 0, max: 10, range: true, value: [3, 7], tooltip: 'always' });
   // $('.slider').slider();
 
+
+
   // radio 활성화시 input text 보이기
   $("input[type=radio][name=questionRadio").on("click", function() {
     var chkValue = $("input[type=radio][name=questionRadio]:checked").val();
