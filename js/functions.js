@@ -5,8 +5,8 @@
 	// Preload
 	$(window).on('load', function () { // makes sure the whole site is loaded
 		$('[data-loader="circle-side"]').fadeOut(); // will first fade out the loading animation
-		$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-		$('body').delay(350).css({
+		$('#preloader').delay(200).fadeOut('slow'); // will fade out the white DIV that covers the website.
+		$('body').delay(200).css({
 			'overflow': 'visible'
 		});
 	})
@@ -58,7 +58,8 @@
 	var overlayNav = $('.cd-overlay-nav'),
 		overlayContent = $('.cd-overlay-content'),
 		navigation = $('.cd-primary-nav'),
-		toggleNav = $('.cd-nav-trigger');
+		toggleNav = $('.cd-nav-trigger'),
+		navPortfolio = $('.close_link');
 
 	//inizialize navigation and content layers
 	layerInit();
@@ -68,6 +69,53 @@
 
 	//open/close the menu and cover layers
 	toggleNav.on('click', function(){
+		if(!toggleNav.hasClass('close-nav')) {
+			//it means navigation is not visible yet - open it and animate navigation layer
+			toggleNav.addClass('close-nav');
+			
+			overlayNav.children('span').velocity({
+				translateZ: 0,
+				scaleX: 1,
+				scaleY: 1,
+			}, 500, 'easeInCubic', function(){
+				navigation.addClass('fade-in');
+			});
+		} else {
+			//navigation is open - close it and remove navigation layer
+			toggleNav.removeClass('close-nav');
+			
+			overlayContent.children('span').velocity({
+				translateZ: 0,
+				scaleX: 1,
+				scaleY: 1,
+			}, 500, 'easeInCubic', function(){
+				navigation.removeClass('fade-in');
+				
+				overlayNav.children('span').velocity({
+					translateZ: 0,
+					scaleX: 0,
+					scaleY: 0,
+				}, 0);
+				
+				overlayContent.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+					overlayContent.children('span').velocity({
+						translateZ: 0,
+						scaleX: 0,
+						scaleY: 0,
+					}, 0, function(){overlayContent.removeClass('is-hidden')});
+				});
+				if($('html').hasClass('no-csstransitions')) {
+					overlayContent.children('span').velocity({
+						translateZ: 0,
+						scaleX: 0,
+						scaleY: 0,
+					}, 0, function(){overlayContent.removeClass('is-hidden')});
+				}
+			});
+		}
+	});
+
+	navPortfolio.on('click', function(){
 		if(!toggleNav.hasClass('close-nav')) {
 			//it means navigation is not visible yet - open it and animate navigation layer
 			toggleNav.addClass('close-nav');
