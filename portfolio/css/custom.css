@@ -1,4 +1,5 @@
 /* COMMON */
+body,th,td,input,select,textarea,button {font-family:"Lora", "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif}
 .tit_marker {font-family:'Permanent Marker', cursive}
 
 /* HEADER */
