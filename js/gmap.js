@@ -50,7 +50,7 @@ function initialize() {
     marker = new google.maps.Marker({
         map: map,
         draggable: true,
-        title: 'Bauhaus', //change title here
+        title: 'Whitebrew', //change title here
         animation: google.maps.Animation.DROP,
         position: mapLocation
     });
