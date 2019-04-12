@@ -1,0 +1,126 @@
+/* global */
+body,th,td,input,select,textarea,button {font-family: 'Poppins', 'Noto Sans KR', sans-serif}
+
+#daumIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} /* 스킵네비게이션 */
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px} /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir_wa {display:block;overflow:hidden;position:relative;z-index:-10;width:100%;height:100%} /* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.screen_out {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.f_l {float:left}
+.f_r {float:right}
+.cl_b {width:0;height:0;font-size:0;line-height:0;clear:both}
+.show {display:block}
+.hide {display:none}
+.tbl {border-collapse:collapse;border-spacing:0} /* 테이블 초기화 */
+.cl_g {display:block;overflow:visible;width:auto;clear:both;*zoom:1}
+.cl_g:after {display:block;visibility:hidden;height:0;font-size:0;clear:both;content:''}
+/* line */
+.txt_bar {font-size:12px;color:#b6b6b6} /* 텍스트형 구분라인 */
+/* Background Image - common 요소 */
+.btn_comm {background:url() no-repeat} /* 버튼 */
+.ico_comm {background:url() no-repeat} /* 아이콘 */
+.tit_comm {background:url() no-repeat} /* 타이틀 */
+.line_comm {background:url() no-repeat} /* 라인 */
+
+
+
+
+/* header */
+.contact_us {float:left;margin-left:2rem;margin-bottom:20px;line-height:1.42857143;vertical-align:top}
+
+/* content */
+.display-1 {word-break:keep-all}
+#pp-nav li .active span,
+.pp-slidesNav .active span,
+#pp-nav span:hover,
+.pp-slidesNav span:hover {border-radius:0}
+.project-detail-text {letter-spacing:0}
+.project-box {border-color:rgba(0,0,0,.4);background-color:rgba(0,0,0,.2)}
+.project-box:hover {background:#FFB44C}
+
+/* 10.08 22:30~ 수정 */
+.navbar-address {margin-right:15px}
+.btn_contact {margin-top:-7px;font-size:14px;font-weight:600;background:transparent;border:2px solid #fff;border-radius: 10px;color:#fff;cursor:pointer}
+.btn_contact:hover {background-color:#FFB44C;border-color:#FFB44C;color:#000}
+.scrollable-projects .title-uppercase {color:#fff}
+.project-category {color:#FFB44C}
+.col-partner .partner_hana {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_hana_gray.png") 0 0 no-repeat}
+.col-partner .partner_hana:hover {background:url("../images/partners/logo_hana.png") 0 0 no-repeat}
+.col-partner .partner_onulhui {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_onulhui_gray.png") 0 0 no-repeat}
+.col-partner .partner_bell {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_bell_gray.png") 0 0 no-repeat}
+.col-partner .partner_bell:hover {background:url("../images/partners/logo_bell.png") 0 0 no-repeat}
+.col-partner .partner_behind {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_behind_gray.png") 0 0 no-repeat}
+.col-partner .partner_behind:hover {background:url("../images/partners/logo_behind.png") 0 0 no-repeat}
+.col-partner .partner_fila {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_fila_gray.png") 0 0 no-repeat}
+.col-partner .partner_fila:hover {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_fila.png") 0 0 no-repeat}
+.col-partner .partner_paper {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_paper_gray.png") 0 0 no-repeat}
+.col-partner .partner_paper:hover {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_paper.png") 0 0 no-repeat}
+.col-partner .partner_findall {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_findall_gray.png") 0 0 no-repeat}
+.col-partner .partner_findall:hover {background:url("../images/partners/logo_findall.png") 0 0 no-repeat}
+.col-partner .partner_pulse9 {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_pulse9_gray.png") 0 0 no-repeat}
+.col-partner .partner_pulse9:hover {background:url("../images/partners/logo_pulse9.png") 0 0 no-repeat}
+.col-partner .partner_land_sub {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_land_sub_gray.png") 0 0 no-repeat}
+.col-partner .partner_land_sub:hover {background:url("../images/partners/logo_land_sub.png") 0 0 no-repeat}
+.col-partner .partner_peapat {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_peapat_gray.png") 0 0 no-repeat}
+.col-partner .partner_apart {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_apart_gray.png") 0 0 no-repeat}
+.col-partner .partner_apart:hover {background:url("../images/partners/logo_apart.png") 0 0 no-repeat}
+.col-partner .partner_quizbuzz {width:220px;height:50px;vertical-align:middle;background:url("../images/partners/logo_quizbuzz_gray.png") 0 0 no-repeat}
+.col-partner .partner_quizbuzz:hover {background:url("../images/partners/logo_quizbuzz.png") 0 0 no-repeat}
+
+.col-service span img {margin:0 auto;vertical-align:middle}
+.col-service h4 {color:#FFB44C}
+
+/* partner area */
+.partner {display:block;width:100%;margin:4rem auto;}
+.partner-item {display:inline-block;float:left;padding:2rem 5rem}
+.partner-item img {display:inline-block;width:220px;height:50px;margin:0 auto;vertical-align:middle}
+
+
+/* contact area */
+.contact-info-row p {color:#324263}
+#mailus {background-color:#282B39}
+.scroll-wrap .scrollable-content {overflow-x:hidden}
+.contact-row strong {color:#FFB44C}
+
+
+/* TypeForm */
+/* .box_typeform {position:relative;margin:0 auto;width:538px;height:400px}
+.type_form {position: absolute;width:100%;height:100%;left:0;right:0;bottom:0;top:0;border:0;} */
+
+.box_typeform {display:block;margin:0 auto;width:50vw}
+.tit_typeform {font-size:4rem;color:#fff;letter-spacing:normal;line-height:5rem}
+.tit_typeform em {display:block;font-style:normal}
+.tit_typeform strong span {color:#FFB44C}
+
+
+.cont_typeform {width:500px;height:50px;}
+.typeform-share {margin-top:50px}
+
+#mailus {background:transparent}
+
+/* Screen Responsiveness */
+
+
+
+@media screen and (max-width:550px) {
+    .box_proj_bg {background-color:#FFB44C}
+    .bg-changer .section-bg {background-image:none !important}
+    .display-1 {font-size: 3.8rem;overflow:hidden;word-break:break-all} 
+    
+    .partner-item {margin:0 auto 0 -20px}
+
+    .project-box {background-color:rgb(40,43,57)}
+
+    .col-contact-info {padding-left:50px}
+    .contact-info-row strong {font-size:18px}
+    .contact-info-row p {font-size:16px}
+    
+    .box_typeform {width:80vw;word-break:keep-all}
+    .tit_typeform {font-size:3rem;line-height:4rem}}
+
+@media screen and (max-width: 800px){
+    .box_typeform {width:70vw;word-break:keep-all
+ } }
+
+ @media screen and (min-width:768px) {
+     .project-item {height:476.97px}
+ }
